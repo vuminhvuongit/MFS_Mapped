@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="\css\login.css" />
+<link rel="stylesheet"
+	href="/css/bootstrap.min.css">
+<script
+	src="/js/lib/jquery/jquery.min.js"></script>
+<script
+	src="/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="/css/font-awesome.min.css">
+</head>
+<body class="body">
+	<div id="div2" class="container loginAnim" style="margin-top: 150px">
+		<form th:action="@{/login}" method="POST" class="form">
+			<div class="form-signin-heading">Login</div>
+			<br />
+			<div class="input-group">
+				<span class="input-group-addon add-on"> <i
+					class="glyphicon glyphicon-user"></i>
+				</span> <input type="text" class="form-control" id="email" name="email"
+					placeholder="Email"> </span>
+			</div>
+			<br />
+
+			<div class="input-group">
+				<span class="input-group-addon add-on"> <i
+					class="glyphicon glyphicon-lock"></i></span> <input type="password"
+					id="password" name="password" placeholder="Password"
+					class="form-control" />
+			</div>
+
+			<input type="hidden" name="${_csrf.parameterName}"
+				value="${_csrf.token}" /> <br>
+			<div id="valid" align="center" th:if="${param.error}">
+				<p style="font-size: 20; color: #FF1C19;">Email or Password
+					invalid, please verify</p>
+			</div>
+			<button class="btn btn-lg button-login btn-block" name="Submit"
+				value="Login" type="Submit" th:text="Login"></button>
+		</form>
+
+		<br>
+
+		<form class="form" th:action="@{/registration}" method="get">
+			<div class="form-signup-heading">You don't have an account?</div>
+			<button class="btn btn-lg button-signup btn-block" type="Submit">Create
+				Account</button>
+		</form>
+
+	</div>
+
+	<script>
+		var a = document.getElementById("valid");
+		var b = $("#div2");
+		if (a.textContent != "") {
+			b.removeClass("loginAnim");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+.m-btn {
+	background-color: transparent;
+	width: 100px;
+	margin-left: 100px;
+	border-radius: 0px;
+}
+
+.form {
+	max-width: 520px;
+	border: none;
+	margin: 0 auto;
+}
+
+.form-signin-heading {
+	text-align: center;
+	font-size: xx-large;
+	font-weight: bolder;
+	color: #3b3b3b;
+}
+
+.form-signup-heading {
+	text-align: center;
+	font-size: x-large;
+	color: #3b3b3b;
+}
+
+.form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+}
+
+.signup {
+	margin-top: 5px;
+	text-align: center;
+}
+
+.button-login {
+	background-color: #09568d;
+	color: white;
+	border-radius: 0 !important;
+	font-weight: bolder !important;
+	margin-top: 10px;
+}
+
+.button-login:hover {
+	background-color: #16216a;
+	color: white !important;
+}
+
+.button-signup {
+	background-color: white;
+	color: #0090c7;
+	border-radius: 0 !important;
+	font-weight: bolder !important;
+	margin-top: 10px;
+}
+
+.button-signup:hover {
+	background-color: #0090c7;
+	color: white !important;
+}
+
+.add-on {
+	border: 0 !important;
+	background-color: transparent !important;
+	font-size: x-large !important;
+	padding-bottom: 10px !important;
+}
+
+.modal-dialog {
+	width: 450px;
+	margin: 150px auto;
+}
+
+.modal-content {
+	border-radius: 0px;
+}
+
+.div-search {
+	margin: auto;
+}
+
+.input-search {
+	width: 60%;
+	margin: auto;
+	font-size: 30px;
+}
+
+.by-btn {
+	border-radius: 5px;
+	background-color: red;
+	color: white;
+	font-weight: 900;
+	width: 120px;
+	font-size: 11px;
+    margin-left: -130px;
+    margin-top: -13px;
+}
